@@ -19,10 +19,9 @@ import {TodoItem} from '../interfaces/todo-item';
 })
 export class ListManagerComponent implements OnInit {
 
-  todoListService: TodoListService;
   todoList: TodoItem[];
 
-  constructor(todoListService: TodoListService) {
+  constructor(private todoListService: TodoListService) {
     this.todoListService = todoListService;
   }
 
